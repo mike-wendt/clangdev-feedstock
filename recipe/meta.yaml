@@ -13,12 +13,12 @@ source:
   url: http://releases.llvm.org/{{ version }}/cfe-{{ version }}.src.tar.xz
   #url: https://github.com/llvm/llvm-project/releases/download/llvmorg-{{ version }}/cfe-{{ version }}.src.tar.xz
   sha256: {{ sha256 }}
-  patches:
-    - patches/0001-Find-conda-gcc-installation.patch
-    - patches/0002-Fix-sysroot-detection-for-linux.patch
-    - patches/0002-clang-add-conda-specific-env-var-CONDA_BUILD_SYSROOT.patch
-    - patches/0003-clang-Fix-normalizeProgramName-s-handling-of-dots-ou.patch
-    - patches/0001-Set-VERSION-in-osx-as-well.patch
+  #patches:
+  #  - patches/0001-Find-conda-gcc-installation.patch
+  #  - patches/0002-Fix-sysroot-detection-for-linux.patch
+  #  - patches/0002-clang-add-conda-specific-env-var-CONDA_BUILD_SYSROOT.patch
+  #  - patches/0003-clang-Fix-normalizeProgramName-s-handling-of-dots-ou.patch
+  #  - patches/0001-Set-VERSION-in-osx-as-well.patch
 
 build:
   number: {{ build_number }}
